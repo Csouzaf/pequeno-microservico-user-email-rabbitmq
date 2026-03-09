@@ -1,6 +1,23 @@
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rabitmq_email
+    username: postgres
+    password: MainUser
+    driver-class-name: org.postgresql.Driver
+
   rabbitmq:
-    host:localhost
-    port:5672
-    username:username
-    password:password
+    address: amqps://sbzvyzzz:g7b5NkHN1mN0AiAWSBAQtEk2JCyEYmHn@gerbil.rmq.cloudamqp.com/sbzvyzzz
+    virtual-host: sbzvyzzz
+    username: sbzvyzzz
+    password: g7b5NkHN1mN0AiAWSBAQtEk2JCyEYmHn
+
+  jpa:
+    hibernate:
+    ddl-auto: update
+    show-sql: true
+    properties:
+    dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+server:
+  port:8080

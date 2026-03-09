@@ -13,7 +13,7 @@ public class RabbitMq {
 
 
     public Queue getEmailQueue() {
-        return new Queue(EMAIL_QUEUE_NAME, false);
+        return new Queue(EMAIL_QUEUE_NAME, true);
     }
 
     public Exchange exchange() {
