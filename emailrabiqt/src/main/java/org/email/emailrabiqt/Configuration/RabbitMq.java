@@ -21,4 +21,6 @@ public class RabbitMq {
     public Exchange exchange() {
         return new DirectExchange("exemplo");
     }
+
+
 }

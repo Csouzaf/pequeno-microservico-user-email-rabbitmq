@@ -6,14 +6,13 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   rabbitmq:
-    addresses:
-    virtual-host:
-    username:
-    password:
-    ports:
+    addresses: amqps://ljaksfju:tkGh7f9Yi-C2EvGgv8rc2T2z5oZ8E5vr@raccoon.lmq.cloudamqp.com/ljaksfju
+    virtual-host: ljaksfju
+    username: ljaksfju
+    password: tkGh7f9Yi-C2EvGgv8rc2T2z5oZ8E5vr
+    ports: 5072
 #    ssl:
 #      enabled: false
-
 
   jpa:
     hibernate:
