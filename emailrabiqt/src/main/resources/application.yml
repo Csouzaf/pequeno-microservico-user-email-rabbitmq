@@ -6,10 +6,14 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   rabbitmq:
-    address: amqps://sbzvyzzz:g7b5NkHN1mN0AiAWSBAQtEk2JCyEYmHn@gerbil.rmq.cloudamqp.com/sbzvyzzz
-    virtual-host: sbzvyzzz
-    username: sbzvyzzz
-    password: g7b5NkHN1mN0AiAWSBAQtEk2JCyEYmHn
+    addresses:
+    virtual-host:
+    username:
+    password:
+    ports:
+#    ssl:
+#      enabled: false
+
 
   jpa:
     hibernate:
@@ -18,6 +22,10 @@ spring:
     properties:
     dialect: org.hibernate.dialect.PostgreSQLDialect
 
-
 server:
-  port:8080
+  port: 8081
+
+logging:
+  leve:
+    org.springframework.amqp: DEBUG
+    com.rabbitmq.client: DEBUG

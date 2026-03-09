@@ -9,6 +9,6 @@ public class Consumer {
 
     @RabbitListener()
     public void listenerEmailQueue(@Payload String payload) {
-
+        System.out.println(payload);
     }
 }
