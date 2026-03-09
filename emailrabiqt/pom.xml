@@ -31,10 +31,18 @@
     </properties>
     <dependencies>
         <!-- Source: https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+<!--        <dependency>-->
+<!--            <groupId>com.rabbitmq</groupId>-->
+<!--            <artifactId>amqp-client</artifactId>-->
+<!--            <version>5.27.1</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+
+        <!-- Source: https://mvnrepository.com/artifact/org.springframework.amqp/spring-rabbit -->
         <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-            <version>5.27.1</version>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>4.0.2</version>
             <scope>compile</scope>
         </dependency>
 

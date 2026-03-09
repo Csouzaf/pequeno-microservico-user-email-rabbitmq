@@ -1,6 +1,9 @@
 package org.email.emailrabiqt.Configuration;
 
-import com.rabbitmq.client.AMQP.Queue;
+
+import org.springframework.amqp.core.DirectExchange;
+import org.springframework.amqp.core.Exchange;
+import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -10,6 +13,10 @@ public class RabbitMq {
 
 
     public Queue getEmailQueue() {
-        return new Queue();
+        return new Queue(EMAIL_QUEUE_NAME, false);
+    }
+
+    public Exchange exchange() {
+        return new DirectExchange("exemplo");
     }
 }
