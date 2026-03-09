@@ -8,6 +8,7 @@ public class RabbitMq {
 
     public static final String EMAIL_QUEUE_NAME = "email_queue";
 
+
     public Queue getEmailQueue() {
         return new Queue();
     }
